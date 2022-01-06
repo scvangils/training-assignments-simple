@@ -22,7 +22,7 @@ public class CheckingAccount {
             // 3. Look up counter account and make transfer object:
             CheckingAccount acct = Accounts.findAcctByNumber(counterAccount);
             return new Transfer(this, acct, amount);
-            
+
         } else {
             throw new BusinessException("Invalid account number!");
         }
